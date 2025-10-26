@@ -1,0 +1,10 @@
+.navbar {
+    background: linear-gradient(to right, #0c0c0a, #076e07ce); /* Example gradient */
+    box-shadow: 0 14px 100px rgba(0, 0, 0, 0.849);
+    font-family: 'Exo 2', sans-serif;
+
+}
+.logo{
+    background: linear-gradient(to right, #ffffff, #076e07ce); /* Example gradient */
+
+}

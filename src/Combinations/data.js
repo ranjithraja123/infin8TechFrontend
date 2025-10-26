@@ -1,0 +1,25 @@
+export const unitCombinations = {
+  L: ['L', 'CAN', 'BOTTLE', 'JAR', 'TANK', 'BAG'],
+  ML: ['ML', 'BOTTLE', 'JAR', 'CAN'],
+  KG: ['KG', 'BAG', 'BOX', 'TUB'],
+  G: ['KG', 'G', 'PKT', 'SACHET'],
+  MG: ["KG",'G', 'MG', 'SACHET', 'PKT'],
+  PCS: ['PCS', 'DOZEN', 'BOX', 'BAG'],
+  NO: ['NO', 'PCS', 'BOX', 'PKT'],
+  PKT: ['PKT', 'BOX', 'DOZEN', 'BAG', 'BUNDLE', 'TRAY'],
+  BOX: ['BOX', 'CARTON', 'BAG'],
+  DOZEN: ['DOZEN', 'BOX', 'BAG'],
+  BOTTLE: ['BOX', 'BOTTLE', 'PKT', 'CAN'],
+  JAR: ['JAR', 'BOX', 'TUB', 'CAN'],
+  CAN: ['CAN', 'BOX', 'BOTTLE'],
+  ROLL: ['ROLL', 'BOX', 'BUNDLE'],
+  TUB: ['TUB', 'BOX', 'BAG'],
+  SACHET: ['SACHET', 'BOX', 'PKT', 'TRAY'],
+  BAG: ['BAG', 'BOX', 'KG', 'PCS'],
+  M: ['ROLL', 'M', 'BOX'],
+  CM: ['ROLL', 'M', 'CM'],
+  MM: ['ROLL', 'CM', 'MM'],
+  TRAY: ['TRAY', 'BOX', 'DOZEN', 'PKT'],
+};
+
+//if consumption in L the purchase unit can be ['L', 'CAN', 'BOTTLE', 'JAR', 'TANK', 'BAG']

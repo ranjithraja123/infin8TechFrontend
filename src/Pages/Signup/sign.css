@@ -1,0 +1,7 @@
+.login {
+    background: 
+      linear-gradient(210deg, black, green, #FFBF00, yellow),
+      rgba(0, 0, 0, 0.3); /* Slightly lighter overlay */
+    background-blend-mode: darken;
+  }
+  

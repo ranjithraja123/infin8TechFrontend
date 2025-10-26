@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bgColor: "#FAFAFA";
+  --color-lightText: "#00000060";
+  --color-subText: "#475569";
+  --color-basicText: "#242731";
+  --color-darkText: "#000000CC";
+  --color-borderColor: "#00000026";
+  --color-primaryBlue: "#006FFD";
+}
+
+@layer components {
+  .apply-border {
+    @apply border border-solid border-[#00000026] p-2;
+  }
+
+  .title-text {
+    @apply text-darkText text-base font-semibold capitalize;
+  }
+
+  .icon-div {
+    @apply hover:applyBorder grid h-9 w-9 cursor-pointer place-content-center rounded-lg border border-transparent;
+  }
+  .form-label-white {
+    @apply text-black;
+  }
+}
+
+@utility form-container {
+  @apply max-w-4xl p-6 mx-auto applyBorder rounded-2xl shadow-2xl shadow-green-900  bg-gradient-to-r from-black to-green-800 text-white;
+}
+@utility formInput {
+  @apply block w-full px-4 py-2 mt-2 text-white bg-green-900 border-b-2 border-green-300  focus:border-blue-500 focus:outline-none focus:ring disabled:bg-green-100 disabled:text-green-600;
+}
+@utility bgColor {
+  @apply bg-[#FAFAFA];
+}
+@utility primaryBG {
+  @apply bg-[#006FFD];
+}
+
+@utility applyBorder {
+  @apply border border-solid border-[#00000026];
+}
+@utility subText {
+  @apply text-sm font-semibold text-[#475569] capitalize;
+}
+@utility title-text-md {
+  @apply text-sm font-bold text-[#1E293B] capitalize;
+}
+
+@utility action-link-btn {
+  @apply border border-solid shadow-2xl shadow-green-900  bg-green-900 hover:bg-green-800 text-white capitalize rounded-xl py-2 px-4 w-fit cursor-pointer;
+}
+@utility list-cols-heading {
+  @apply text-sm font-bold text-white capitalize;
+}
+@utility list-container {
+  @apply border border-solid border-[#00000026] flex h-full w-full flex-col overflow-hidden rounded-xl shadow-2xl shadow-green-900  bg-gradient-to-r from-black to-green-800;
+}
+@utility list-container-top {
+  @apply flex w-full flex-row items-center justify-between gap-2 p-4  text-white;
+}
+@utility list-rows-header {
+  @apply grid w-full list-cols-heading grid-cols-12 bg-[#0e350e] p-4;
+}
+
+
+#date-picker {
+  font-family: "Noto Sans", sans-serif;
+}
+/* styles/globals.css */
+.page-content::-webkit-scrollbar {
+  display: none;
+}
+
+.page-content {
+  /* display: flex;
+	flex-direction: column;
+	gap: 16px; */
+  padding: 16px 32px;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  position: relative;
+}
+
+.page-route-container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+  /* overflow-y: auto; */
+  /* -ms-overflow-style: none; IE and Edge */
+  /* scrollbar-width: none; Firefox */
+}
+
+.page-route-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

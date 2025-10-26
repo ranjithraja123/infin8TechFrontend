@@ -1,0 +1,21 @@
+.inventory{
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+/* Custom thin scrollbar */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}

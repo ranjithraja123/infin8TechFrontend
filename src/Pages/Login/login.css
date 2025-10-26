@@ -1,0 +1,13 @@
+.login {
+    background: 
+      linear-gradient(210deg, black, green, white, white),
+      rgba(0, 0, 0, 0.3); /* Slightly lighter overlay */
+    background-blend-mode: darken;
+  }
+  
+
+  .otp-input {
+    outline: none;
+    margin: 0 0.25rem;
+    font-size: 1.5rem;
+}
